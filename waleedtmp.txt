@@ -1,0 +1,146 @@
+https://codepen.io/murias/pen/dYREwe
+
+
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * https://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+
+//-----------------------------
+//  Yamm Styles
+//-----------------------------
+
+.yamm {
+
+  // reset positions 
+  .nav, .collapse, .dropup, .dropdown {
+    position: static;
+  }  
+
+  // propagate menu position under container for fw navbars
+  .container {
+    position: relative;
+  }
+
+  // by default aligns menu to left
+  .dropdown-menu {
+    left: auto;
+  }
+  
+  // Content with padding 
+  .yamm-content {
+      padding: 5px; 
+      dl.mega-menu dt a{border-bottom:1px solid #000; }
+      dl.mega-menu dt a,dl.mega-menu dd a{display:block;padding: 5px ; }  
+      dl.mega-menu dt a:hover,dl.mega-menu dd a:hover{ }
+dl.mega-menu dt a.active,dl.mega-menu dd a.active:hover{ }
+
+  }
+
+  // Fullwidth menu
+  .dropdown.yamm-fw .dropdown-menu {
+    left: 0; right: 0;
+  } 
+} 
+
+
+    <header>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar yamm navbar-scroll navbar-inverse navbar-fixed-top" role="navigation" id="topnavbar">
+
+
+
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" title="frontpage">Logo here</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <!--Wayfinder.outerTpl -->
+                    <ul class="nav navbar-nav">
+                        <!-- Wayfinder.parentRowTpl -->
+                        <li class="first dropdown yamm-fw">
+                            <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">megamenu Level 1<b class="caret"></b></a>
+                            <!--Wayfinder.innerTpl -->
+                            <ul class="dropdown-menu ">
+
+                                <!-- Yamm start tags -->
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <dl class="col-sm-3 mega-menu">
+                                                <!-- Wayfinder.categoryFoldersTpl -->
+                                                <dt class="first"><a href="#">Level 2 container</a></dt>
+                                                <!--Wayfinder.innerTpl -->
+                                                <dd class="first"><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd class="last"><a href="#">Child on level 3</a></dd>
+                                            </dl>
+                                            <dl class="col-sm-3 mega-menu">
+                                                <dt class=""><a href="#">Level 2 container</a></dt>
+
+                                                <dd class="first"><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd class="last"><a href="#">Child on level 3</a></dd>
+
+
+                                            </dl>
+                                            <dl class="col-sm-3 mega-menu">
+
+                                                <dt class=""><a href="#">Level 2 container</a></dt>
+                                                <dd class="first"><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+
+                                                <dd class="last"><a href="#">Child on level 3</a></dd>
+                                            </dl>
+                                            <dl class="col-sm-3 mega-menu">
+                                                <dt class="">
+                                    <a href="#">Level 2 container</a></dt>
+                                                <dd class="first"><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd><a href="#">Child on level 3</a></dd>
+                                                <dd class="last"><a href="#">Child on level 3</a></dd>
+                                            </dl>
+
+                                           
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--yamm end tags-->
+                            </ul>
+                        </li>
+
+                        <li class=" dropdown"><a href="#" title="Referanser" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		Standard Level 1<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">Level 2</a></li>
+                                <li><a href="#">Level 2</a></li>
+                                <li><a href="#">Level 2</a></li>
+                                <li> <a href="#">Level 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
